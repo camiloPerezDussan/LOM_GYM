@@ -166,7 +166,7 @@ header {
         --social-media-container-size: 45px;
     }
 
-    
+
 
     h2 {
         font-size: 2.3rem;
@@ -192,6 +192,10 @@ header {
         font-size: 18px;
     }
 
+    h2 {
+        font-size: 1.9rem;
+    }
+
     footer,
     header {
         nav {
@@ -212,9 +216,5 @@ header {
         --subheader-title-size: 3rem;
         --section-title-size: 2.7rem;
         --wp-size: 1rem;
-    }
-
-    h2 {
-        font-size: 1.8rem;
     }
 }
