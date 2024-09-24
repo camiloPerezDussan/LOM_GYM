@@ -47,7 +47,7 @@
 }
 
 .phone-image {
-    width: 100%;
+    /* width: 100%; */
     height: var(--phone-height);
     display: block;
     margin: var(--spacing-30) 0;
