@@ -3,7 +3,7 @@ header {
     padding: var(--spacing-50) var(--lateral-spacing) var(--spacing-100) var(--lateral-spacing);
 }
 
-header:before {
+header::before {
     content: '';
     position: absolute;
     top: 0;
