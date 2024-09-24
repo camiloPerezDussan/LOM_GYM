@@ -14,7 +14,6 @@ header:before {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
     opacity: 0.25;
     z-index: 0;
 }
