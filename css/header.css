@@ -52,5 +52,7 @@ header:before {
         object-fit: cover;
         display: block;
         border-radius: var(--border-rounded);
+        position: relative;
+        z-index: 2;
     }
 }
