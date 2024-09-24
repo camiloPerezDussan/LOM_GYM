@@ -22,7 +22,9 @@
 
 .section-content {
     position: relative;
-    z-index: 2;
+    z-index: 10; /* Mayor valor para estar por delante */
+    transform: translate3d(0, 0, 0); /* Crear un nuevo contexto de apilamiento */
+    -webkit-transform: translateZ(0); /* Compatibilidad con iOS y Safari */
 }
 
 .gradient-text-background {
