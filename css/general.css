@@ -21,8 +21,8 @@
 }
 
 .section-content {
-    position: relative;
-    z-index: 2;
+    position: relative !important;
+    z-index: 2 !important;
 }
 
 .gradient-text-background {

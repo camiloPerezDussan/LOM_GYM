@@ -5,7 +5,7 @@ header {
 
 header::before {
     content: '';
-    position: absolute;
+    position: absolute !important;
     top: 0;
     left: 0;
     right: 0;
@@ -15,7 +15,7 @@ header::before {
     background-position: center;
     background-size: cover;
     opacity: 0.25;
-    z-index: 0;
+    z-index: 0 !important;
 }
 
 #header {
@@ -52,8 +52,5 @@ header::before {
         object-fit: cover;
         display: block;
         border-radius: var(--border-rounded);
-        position: relative;
-        z-index: 999; /* Asegúrate de que este valor sea mayor que el fondo */
-        opacity: 1;
     }
 }
