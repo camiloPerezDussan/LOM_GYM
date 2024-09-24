@@ -1,0 +1,85 @@
+#loader {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    animation: fadeIn 1s ease 0s normal forwards;
+    width: 150px;
+}
+
+.dumbbell {
+    position: relative;
+    width: 100%;
+    height: 75px;
+    animation: loader 3s ease 0s infinite normal forwards;
+}
+
+.left-weight,
+.right-weight {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    height: 100%;
+}
+
+.left-weight {
+    left: 10px;
+}
+
+.right-weight {
+    right: 10px;
+}
+
+.weight-medium {
+    height: 70% !important;
+}
+
+.bar {
+    width: 100%;
+    height: 10px;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.weight {
+    width: 15px;
+    height: 100%;
+    border-radius: 15px;
+    background-image: linear-gradient(165deg, #8d6c1c 0%, var(--principal-color) 50%, #8d6c1c 100%);
+    align-self: center;
+}
+
+
+.progress-container {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-image: linear-gradient(165deg, #8d6c1c 0%, var(--principal-color) 50%, #8d6c1c 100%);
+    border: none;
+    border-radius: 15px;
+    animation: load 5s infinite;
+}
+
+.hidden {
+    animation: fadeOut 0.5s ease 0s 1 normal forwards !important;
+}
+

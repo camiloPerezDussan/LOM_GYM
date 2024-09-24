@@ -1,0 +1,56 @@
+header {
+    position: relative;
+    padding: var(--spacing-50) var(--lateral-spacing) var(--spacing-100) var(--lateral-spacing);
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/people/19.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.25;
+    z-index: 0;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-50);
+}
+
+#header>img {
+    width: var(--logo-size);
+}
+
+#sub-header {
+    text-align: center;
+
+    h1,
+    span {
+        font-size: var(--subheader-title-size);
+    }
+
+    p {
+        opacity: 0.5;
+    }
+
+    h1, h2, p {
+        margin-bottom: var(--spacing-50);
+    }
+
+    video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        box-shadow: 0 0 15px 5px #363636;
+        object-fit: cover;
+        display: block;
+        border-radius: var(--border-rounded);
+    }
+}

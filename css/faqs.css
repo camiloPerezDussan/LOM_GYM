@@ -1,0 +1,69 @@
+#faqs {
+    padding: var(--spacing-100) var(--lateral-spacing);
+    position: relative;
+
+    h1 {
+        margin-bottom: var(--spacing-100);
+    }
+}
+
+#faqs::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/people/12.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 0;
+    height: auto;
+}
+
+.accordion-button {
+    background: none;
+    -webkit-text-fill-color: initial;
+    /* color: var(--white-color); */
+    transition: color 0.1s;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23DAA520' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>")
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>");
+    height: 1.5rem;
+    width: 1.5rem;
+    background-size: 1.5rem;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body,
+.accordion-button {
+    padding: var(--spacing-30) var(--spacing-50);
+}
+
+.accordion-item {
+    overflow: hidden;
+    border: 3px solid var(--dark-color);
+    background: var(--dark-color);
+
+    h2 {
+        background-color: var(--dark-color);
+    }
+}
+
+.accordion-body {
+    background: var(--white-color);
+
+    p {
+        color: var(--dark-color);
+    }
+}

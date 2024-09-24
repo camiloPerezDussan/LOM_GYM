@@ -1,0 +1,220 @@
+:root {
+    --lateral-spacing: 20%;
+    --subheader-title-size: 6rem;
+    --section-title-size: 4rem;
+    --logo-size: 110px;
+    --spacing-50: 50px;
+    --spacing-30: 30px;
+    --spacing-100: 100px;
+    --wp-size: 1.7rem;
+    --grid-height: 650px;
+    --border-rounded: 10px;
+    --principal-color: #f7d000;
+    --white-color: #ffffff;
+    --dark-color: black;
+    --grey-color: #0C0C0C;
+    --social-media-font-size: 30px;
+    --social-media-container-size: 55px;
+    --play-font-size: 3rem;
+    --actions-size: 70px;
+    --phone-height: 550px;
+}
+
+.section-content {
+    position: relative;
+    z-index: 2;
+}
+
+.gradient-text-background {
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.gold-background {
+    background-size: 200% auto !important;
+    background-image: linear-gradient(165deg, #8d6c1c 0%, var(--principal-color) 50%, #8d6c1c 100%) !important;
+    background-position: right center !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+a,
+p {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+body {
+    background: var(--dark-color);
+}
+
+*,
+a {
+    color: var(--white-color);
+}
+
+a,
+h1,
+h2 {
+    font-weight: 500;
+}
+
+p {
+    font-weight: 400;
+}
+
+*,
+a,
+p,
+h1,
+h2,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section-title {
+    text-align: center;
+    line-height: normal;
+    font-weight: 600;
+    font-size: var(--section-title-size);
+    margin-top: -23px;
+}
+
+footer,
+header {
+    ul {
+        display: flex;
+        gap: 30px;
+
+        li {
+            display: flex;
+
+            a {
+                text-decoration: none;
+                transition: 0.3s;
+                will-change: transform;
+            }
+
+            a:hover {
+                transform: scale(1.05);
+                background-position: right center !important;
+            }
+        }
+    }
+}
+
+#page {
+    display: none;
+    opacity: 0;
+    position: relative;
+}
+
+.showPage {
+    display: block !important;
+    animation: fadeIn 1s ease 0s 1 normal forwards !important;
+}
+
+@media only screen and (max-width: 1920px) {
+    :root {
+        --lateral-spacing: 10%;
+        --subheader-title-size: 4.5rem;
+        --section-title-size: 3.5rem;
+        --logo-size: 100px;
+        --spacing-50: 40px;
+        --spacing-30: 20px;
+        --spacing-100: 80px;
+        --wp-size: 1.4rem;
+        --grid-height: 500px;
+        --social-media-font-size: 28px;
+        --social-media-container-size: 50px;
+        --play-font-size: 2.5rem;
+        --actions-size: 60px;
+        --phone-height: 500px;
+    }
+
+    a,
+    p {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        margin-top: -18px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    :root {
+        --lateral-spacing: 5%;
+        --subheader-title-size: 4.3rem;
+        --section-title-size: 3.3rem;
+        --spacing-100: 70px;
+        --wp-size: 1.2rem;
+        --grid-height: 400px;
+        --social-media-font-size: 25px;
+        --social-media-container-size: 45px;
+    }
+
+    
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+    .section-title {
+        margin-top: -15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    :root {
+        --grid-height: auto;
+        --phone-height: 450px;
+        --subheader-title-size: 3.2rem;
+        --section-title-size: 3rem;
+        --social-media-font-size: 22px;
+        --social-media-container-size: 42px;
+    }
+
+    a,
+    p {
+        font-size: 18px;
+    }
+
+    footer,
+    header {
+        nav {
+            display: none;
+        }
+    }
+
+    header img {
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    :root {
+        --lateral-spacing: 3%;
+        --spacing-100: 60px;
+        --spacing-50: 25px;
+        --subheader-title-size: 3rem;
+        --section-title-size: 2.7rem;
+        --wp-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
