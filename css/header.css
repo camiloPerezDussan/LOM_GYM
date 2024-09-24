@@ -52,5 +52,8 @@ header::before {
         object-fit: cover;
         display: block;
         border-radius: var(--border-rounded);
+        position: relative;
+        z-index: 999; /* Asegúrate de que este valor sea mayor que el fondo */
+        opacity: 1;
     }
 }
