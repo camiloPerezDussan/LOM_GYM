@@ -183,8 +183,8 @@ header {
         --phone-height: 450px;
         --subheader-title-size: 3.2rem;
         --section-title-size: 2.5rem;
-        /* --social-media-font-size: 22px;
-        --social-media-container-size: 42px; */
+        --spacing-50: 25px;
+
     }
 
     a,
@@ -214,7 +214,6 @@ header {
         --spacing-100: 60px;
         --spacing-50: 25px;
         --subheader-title-size: 3rem;
-        /* --section-title-size: 2.5rem; */
         --wp-size: 1rem;
     }
 }
