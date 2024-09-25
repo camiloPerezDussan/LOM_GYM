@@ -1,5 +1,5 @@
 #includes {
-    padding: var(--spacing-100) var(--lateral-spacing) var(--spacing-50) var(--lateral-spacing);
+    padding: var(--spacing-100) var(--lateral-spacing);
     position: relative;
 }
 
@@ -10,7 +10,6 @@
     flex-wrap: wrap;
     margin-top: var(--spacing-100);
     gap: 25px;
-    margin-bottom: var(--spacing-50);
 
     .includes-item {
         background: var(--dark-color);
