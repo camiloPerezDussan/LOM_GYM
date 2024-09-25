@@ -1,11 +1,13 @@
 .container-button {
 	position: relative;
 	text-align: center;
-
+    margin: 0 var(--lateral-spacing);
 	a {
 		transition: 0.3s;
 		font-size: var(--wp-size);
 		width: max-content;
+		max-width: 100%;
+		line-height: 22px;
 		z-index: 3;
 		text-decoration: none;
 		border: none;

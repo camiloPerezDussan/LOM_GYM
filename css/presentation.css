@@ -12,7 +12,6 @@
 
         >div {
             padding: var(--spacing-50);
-            text-align: justify;
             width: 50%;
             overflow: hidden;
         }
