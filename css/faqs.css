@@ -26,8 +26,10 @@
 .accordion-button {
     background: none;
     -webkit-text-fill-color: initial;
-    /* color: var(--white-color); */
     transition: color 0.1s;
+    p {
+        margin-right: 10px;
+    }
 }
 
 .accordion-button:not(.collapsed)::after {
